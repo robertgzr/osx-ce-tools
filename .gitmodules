@@ -1,0 +1,3 @@
+[submodule "bootloadHID"]
+	path = bootloadHID
+	url = https://github.com/robertgzr/bootloadHID
