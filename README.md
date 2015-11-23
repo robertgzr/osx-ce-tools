@@ -1,18 +1,18 @@
 AVR WORKSPACE
 =============
 
-OSX
----
-- avr-gcc
-- [bootloadHID](https://github.com/ajd4096/bootloadHID)
-- [Custom Makefile](SublimeAVR/htw/Makefile)
+Includes:
+* AVR-GCC toolchain
+* [bootloadHID](https://github.com/ajd4096/bootloadHID)
+* [Custom Makefile](SublimeAVR/htw/Makefile)
 
 *optional*
+* [Sublime Text 3](http://www.sublimetext.com/3) + [SublimeAVR](https://packagecontrol.io/packages/AVR)
+* [C Improved](https://packagecontrol.io/packages/C%20Improved) syntax highlighting
+* custom project template
 
-- Sublime Text + SublimeAVR
-- C Improved Syntax Highlighting
-- custom project template
-
+OSX
+---
 ### Get avr-gcc and friends
 
 #### Via homebrew
@@ -25,9 +25,9 @@ OSX
 
 This will pull the prerequisites `avr-binutils` and `avr-gcc`.
 
-For previous versions of `avr-libc` refer to the instructions [here](https://github.com/osx-cross/homebrew-avr).
+For previous versions of `avr-libc` refer to [these instructions](https://github.com/osx-cross/homebrew-avr).
 
-**This can take a while as you have to build the whole avr-compiler.**
+**This can take a while as you'll have to build the compiler.**
 
 #### Via Arduino IDE
 *todo*
@@ -38,8 +38,6 @@ For previous versions of `avr-libc` refer to the instructions [here](https://git
 "CrossPack is a development environment for Atmel’s AVR® microcontrollers running on Apple’s Mac OS X, similar to AVR Studio on Windows."
 
 [Homepage](https://www.obdev.at/products/crosspack/index.html)
-
-*todo*
 
 ### Get bootloadHID
 
@@ -59,11 +57,8 @@ Homebrew takes care of installing the dependencies, only do:
 ## Optional
 
 #### Get Sublime Text 3 with SublimeAVR
-[Download ST3](http://www.sublimetext.com/3)
 
-**Install Package Control**
-
-[Go here.](https://packagecontrol.io/installation)
+If you don't have PackageControl. [Get it here.](https://packagecontrol.io/installation)
 
 **Install SublimeAVR**
 
