@@ -1,6 +1,8 @@
-# AVR WORKSPACE
+AVR WORKSPACE
+=============
 
-## OSX
+OSX
+---
 - avr-gcc
 - [bootloadHID](https://github.com/ajd4096/bootloadHID)
 - [Custom Makefile](SublimeAVR/htw/Makefile)
@@ -30,6 +32,8 @@ For previous versions of `avr-libc` refer to the instructions [here](https://git
 #### Via Arduino IDE
 *todo*
 
+*if you have the official ArduinoIDE from arduino.cc installed on your system you could also use the avr-compiler that is included there*
+
 #### CrossPack for AVR®
 "CrossPack is a development environment for Atmel’s AVR® microcontrollers running on Apple’s Mac OS X, similar to AVR Studio on Windows."
 
@@ -39,23 +43,20 @@ For previous versions of `avr-libc` refer to the instructions [here](https://git
 
 ### Get bootloadHID
 
-**`bootloadHID` depends on `libusb` and `libusb-compat`**
-
 #### Build from source
 
 0. `brew install brew install libusb libusb-compat`
-1. `git clone https://github.com/ajd4096/bootloadHID`
-2. Go into `commandline` folder.
-3. `./configure`
-4. `make`
-5. `make install`
-
+1. `git clone https://github.com/robertgzr/bootloadHID`
+2. `cd commandline`
+3. `make VENDORID=0x16c0 PRODUCTID=0x05DF`
 
 #### Via homebrew
 
-*todo: Needs homebrew-formula*
+Homebrew takes care of installing the dependencies, only do:
 
-### Optional
+`brew install --HEAD https://raw.githubusercontent.com/robertgzr/avr-workspace/master/bootloadhid.rb`
+
+## Optional
 
 #### Get Sublime Text 3 with SublimeAVR
 [Download ST3](http://www.sublimetext.com/3)
@@ -70,16 +71,23 @@ For previous versions of `avr-libc` refer to the instructions [here](https://git
 2. Select `Package Control: Install Package`
 3. Type `AVR` into the search box and select the package to install it
 
+**Custom SublimeAVR-Template**
+
+[This script](https://github.com/robertgzr/avr-workspace/blob/master/SublimeAVR/install_template.sh) puts the contents of the **htw** directory into the right place so you can use it as a template in SublimeAVR.
+
+As it is this provides:
+* `main.c`
+* `settings.h` - use this to set your `F_CPU`
+* `Makefile` - if you installed `bootloadHID` with brew, you can simply do `make flash` to flash your program onto the board
+
+LINUX
+-----
+*The process shouldn't be that much different than it is for Mac.*
+
+*You have to build or install the AVR compiler tools, that will depend on your system. You can propably find `avr-gcc` in the repositories of your distribution*
+
+*For `bootloadHID` you can follow the build instructions from the OSX section.*
+
+WINDOWS
+-------
 *todo*
-
-Download and execute the custom project template installer: [here](todo)
-
-#### SublimeAVR Tutorial
-
-*todo*
-
-[Go here](todo)
-
-## LINUX
-
-## WINDOWS
