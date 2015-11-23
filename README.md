@@ -3,7 +3,7 @@
 ## OSX
 - avr-gcc
 - [bootloadHID](https://github.com/ajd4096/bootloadHID)
-- [custom Makefile](SublimeAVR/htw/Makefile)
+- [Custom Makefile](SublimeAVR/htw/Makefile)
 
 *optional*
 
@@ -13,19 +13,19 @@
 
 ### Get avr-gcc and friends
 
-#### Using brew
+#### Via homebrew
 
-    # tap the repository
+    ## tap the repository
     $ brew tap osx-cross/avr
 
-    # to install latest avr-gcc
+    ## to install latest avr-gcc
     $ brew install avr-libc
 
 This will pull the prerequisites `avr-binutils` and `avr-gcc`.
 
 For previous versions of `avr-libc` refer to the instructions [here](https://github.com/osx-cross/homebrew-avr).
 
-This can take a while as you have to build compiler for yourself.
+**This can take a while as you have to build the whole avr-compiler.**
 
 #### Via Arduino IDE
 *todo*
@@ -34,11 +34,16 @@ This can take a while as you have to build compiler for yourself.
 "CrossPack is a development environment for Atmel’s AVR® microcontrollers running on Apple’s Mac OS X, similar to AVR Studio on Windows."
 
 [Homepage](https://www.obdev.at/products/crosspack/index.html)
+
 *todo*
 
 ### Get bootloadHID
 
+**`bootloadHID` depends on `libusb` and `libusb-compat`**
+
 #### Build from source
+
+0. `brew install brew install libusb libusb-compat`
 1. `git clone https://github.com/ajd4096/bootloadHID`
 2. Go into `commandline` folder.
 3. `./configure`
@@ -46,8 +51,9 @@ This can take a while as you have to build compiler for yourself.
 5. `make install`
 
 
-#### Using brew
-*todo*
+#### Via homebrew
+
+*todo: Needs homebrew-formula*
 
 ### Optional
 
@@ -69,7 +75,9 @@ This can take a while as you have to build compiler for yourself.
 Download and execute the custom project template installer: [here](todo)
 
 #### SublimeAVR Tutorial
+
 *todo*
+
 [Go here](todo)
 
 ## LINUX
