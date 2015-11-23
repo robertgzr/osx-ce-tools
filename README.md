@@ -2,8 +2,8 @@
 
 ## OSX
 - avr-gcc
-- [bootloadHID](https://github.com/robertgzr/bootloadHID)
-- [custom Makefile](todo)
+- [bootloadHID](https://github.com/ajd4096/bootloadHID)
+- [custom Makefile](SublimeAVR/htw/Makefile)
 
 *optional*
 
@@ -39,7 +39,7 @@ This can take a while as you have to build compiler for yourself.
 ### Get bootloadHID
 
 #### Build from source
-1. `git clone https://github.com/robertgzr/bootloadHID`
+1. `git clone https://github.com/ajd4096/bootloadHID`
 2. Go into `commandline` folder.
 3. `./configure`
 4. `make`
