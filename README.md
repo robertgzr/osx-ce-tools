@@ -43,7 +43,7 @@ For previous versions of `avr-libc` refer to [these instructions](https://github
 
 #### Build from source
 
-0. `brew install brew install libusb libusb-compat`
+0. `brew install libusb libusb-compat`
 1. `git clone https://github.com/robertgzr/bootloadHID`
 2. `cd commandline`
 3. `make VENDORID=0x16c0 PRODUCTID=0x05DF`
