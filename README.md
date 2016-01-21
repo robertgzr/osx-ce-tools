@@ -30,9 +30,12 @@ For previous versions of `avr-libc` refer to [these instructions](https://github
 **This can take a while as you'll have to build the compiler.**
 
 #### Via Arduino IDE
-*todo*
 
-*if you have the official ArduinoIDE from arduino.cc installed on your system you could also use the avr-compiler that is included there*
+The `Arduino.app` includes all avr-* binaries needed to compile our projects.
+
+`/path/to/Arduino.app/Contents/Java/hardware/tools/avr/`
+
+*if you have the official Arduino IDE from arduino.cc installed on your system you could also use the avr-compiler that is included there*
 
 #### CrossPack for AVR®
 "CrossPack is a development environment for Atmel’s AVR® microcontrollers running on Apple’s Mac OS X, similar to AVR Studio on Windows."
@@ -72,12 +75,12 @@ If you don't have PackageControl. [Get it here.](https://packagecontrol.io/insta
 
 As it is this provides:
 * `main.c`
-* `settings.h` - use this to set your `F_CPU`
+* `settings.h` - use this to set `F_CPU`
 * `Makefile` - if you installed `bootloadHID` with brew, you can simply do `make flash` to flash your program onto the board
 
 LINUX
 -----
-*The process shouldn't be that much different than it is for Mac.*
+*The process shouldn't be that much different than it is for OS X.*
 
 *You have to build or install the AVR compiler tools, that will depend on your system. You can propably find `avr-gcc` in the repositories of your distribution*
 
