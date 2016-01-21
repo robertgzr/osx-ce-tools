@@ -55,11 +55,11 @@ $(TARGET).bin: $(TARGET).elf
 $(TARGET).lst: $(TARGET).elf
 	$(OBJDUMP) -h -S $< > $@
 
-avrdude:
-	avrdude $(AVRDUDE_FLAGS) -e -m flash -i $(TARGET).hex
+avrdude: $(TARGET).hex
+	avrdude $(AVRDUDE_FLAGS) -e -m flash -i $<
 
-flash:
-	bootloadHID $(TARGET).hex
+flash: $(TARGET).hex
+	bootloadHID $<
 
 clean:
 	$(RM) $(OBJECTS) *.elf *.hex *.lst *.map *.d
