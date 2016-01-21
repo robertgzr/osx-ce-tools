@@ -1,6 +1,6 @@
 #include <avr/io.h>
 
-#define F_CPU 12000000
+/* F_CPU in settings.h */
 #define BIT(i) (1<<(i))
 
 int main(void)
