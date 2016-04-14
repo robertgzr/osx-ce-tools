@@ -1,1 +1,1 @@
-see the [wiki](wiki/avr-home.md) for instructions
+see the [wiki](wiki/avr-home) for instructions

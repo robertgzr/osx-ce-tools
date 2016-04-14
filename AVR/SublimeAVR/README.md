@@ -1,1 +1,1 @@
-see the [wiki](wiki/avr-sublimeavr.md) for instructions
+see the [wiki](wiki/avr-sublimeavr) for instructions
