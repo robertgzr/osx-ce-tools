@@ -1,1 +1,0 @@
-see the [wiki](wiki/avr-home) for instructions
