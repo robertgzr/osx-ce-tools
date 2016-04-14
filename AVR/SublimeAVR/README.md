@@ -1,0 +1,1 @@
+see the [wiki](wiki/avr-sublimeavr.md) for instructions

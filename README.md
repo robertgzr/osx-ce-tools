@@ -1,6 +1,3 @@
-CE tools for OS X
-=================
+## CE tools for OS X
 
-[AVR](AVR)
-
-...
+see the [wiki](wiki/Home.md) for instructions
